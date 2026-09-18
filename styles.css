@@ -1,0 +1,43 @@
+:root{
+  --bg:#F3F6FA; --panel:#FFFFFF; --ink:#14212E; --slate:#4C5D6E; --muted:#7C8B9A;
+  --line:#DCE4EC; --brand:#1866F0; --cyan:#0AA0C0; --graphite:#070B11;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:28px 20px 64px}
+header.site{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:16px 20px;border-bottom:1px solid var(--line);background:var(--panel)}
+.brand{font-weight:900;letter-spacing:1px;font-size:18px}
+.brand .lab{color:var(--cyan)}
+.sub{color:var(--muted);font-size:11px;letter-spacing:2px;font-weight:800;text-transform:uppercase}
+nav a{color:var(--slate);text-decoration:none;font-weight:700;font-size:13px;margin-left:14px}
+nav a:hover{color:var(--brand)}
+.langtoggle button{border:1px solid var(--line);background:var(--panel);color:var(--slate);
+  border-radius:999px;padding:5px 12px;font-weight:800;font-size:12px;cursor:pointer;margin-left:6px}
+.langtoggle button.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+h1{font-size:30px;font-weight:900;margin:22px 0 6px}
+h2{font-size:18px;font-weight:900;margin:26px 0 8px;letter-spacing:.2px}
+.hero{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:26px;margin-top:18px}
+.hero .big{font-size:36px;font-weight:900;letter-spacing:1px}
+.hero .big .lab{color:var(--cyan)}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.pill{border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--bg);font-weight:700;font-size:13px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:16px}
+.muted{color:var(--muted);font-size:13px}
+.footlinks{margin-top:26px;display:flex;flex-wrap:wrap;gap:16px}
+.footlinks a{color:var(--brand);text-decoration:none;font-weight:800;font-size:14px}
+.badge{display:inline-block;border:1px dashed var(--line);border-radius:10px;padding:10px 14px;color:var(--muted);font-weight:700}
+ul{padding-left:20px}
+li{margin:4px 0}
+a{color:var(--brand)}
+.date{color:var(--muted);font-size:12px;margin-top:8px}
+.it,.en{display:none}
+body[data-lang="it"] .it{display:block}
+body[data-lang="en"] .en{display:block}
+.inline.it,.inline.en{display:none}
+body[data-lang="it"] .inline.it{display:inline}
+body[data-lang="en"] .inline.en{display:inline}
+footer.site{border-top:1px solid var(--line);padding:20px;color:var(--muted);font-size:12px;text-align:center}
