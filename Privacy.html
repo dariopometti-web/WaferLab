@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WaferLab — Privacy Policy</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-lang="it">
+<header class="site">
+  <div><span class="brand">Wafer<span class="lab">Lab</span></span><div class="sub">Privacy</div></div>
+  <div class="langtoggle"><button data-set="it">IT</button><button data-set="en">EN</button></div>
+</header>
+<div class="wrap">
+  <!-- ITALIANO -->
+  <div class="it">
+    <h1>Informativa sulla Privacy</h1>
+    <p class="date">Ultimo aggiornamento: 18 settembre 2026</p>
+    <p>WaferLab è un'applicazione educativa sui semiconduttori, offline-first. Questa informativa descrive esattamente il comportamento reale dell'app.</p>
+    <h2>Dati raccolti</h2>
+    <p><strong>WaferLab non raccoglie dati personali.</strong> L'app non richiede account né login, non contiene pubblicità, non effettua tracciamento e non utilizza strumenti di analytics. Nessun dato viene trasmesso a server: l'app non ha un backend e non effettua chiamate di rete per il suo funzionamento principale.</p>
+    <h2>Dati conservati sul dispositivo</h2>
+    <p>Alcune preferenze e progressi sono salvati <strong>solo localmente</strong> sul dispositivo (archiviazione locale dell'app): preferenza lingua, preferenza animazioni, stato "intro vista" e avanzamento nei processi. Questi dati non sono personali e non lasciano il dispositivo.</p>
+    <h2>Link esterni</h2>
+    <p>Aprendo i link a Privacy, Termini, Fonti, Licenze o Supporto, l'app apre il browser di sistema: solo in quel momento è richiesta una connessione, per caricare quelle pagine esterne.</p>
+    <h2>Componenti di terze parti</h2>
+    <p>L'app usa librerie open-source per l'interfaccia e l'archiviazione locale. Nessuna di esse raccoglie dati personali o effettua tracciamento (vedi la pagina Licenze).</p>
+    <h2>Conservazione ed eliminazione</h2>
+    <p>I dati locali restano finché non disinstalli l'app o non usi Impostazioni → Reset progressi (che cancella i progressi). La disinstallazione rimuove tutti i dati locali.</p>
+    <h2>Minori</h2>
+    <p>L'app non raccoglie dati, quindi non raccoglie dati di minori.</p>
+    <h2>Contatti</h2>
+    <p>Per domande sulla privacy: <strong>waferlab.app@outlook.com</strong> — Titolare: Dario Pometti.</p>
+    <p class="muted">Questo testo descrive il comportamento tecnico verificato dell'app e non costituisce consulenza legale certificata; una revisione legale è consigliata.</p>
+  </div>
+  <!-- ENGLISH -->
+  <div class="en">
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: September 18, 2026</p>
+    <p>WaferLab is an offline-first educational semiconductor app. This policy describes the app's actual behavior.</p>
+    <h2>Data we collect</h2>
+    <p><strong>WaferLab does not collect personal data.</strong> The app requires no account or login, contains no ads, performs no tracking, and uses no analytics. No data is sent to any server: the app has no backend and makes no network requests for its core functionality.</p>
+    <h2>Data stored on your device</h2>
+    <p>Some preferences and progress are stored <strong>locally only</strong> on your device (app local storage): language preference, animation preference, an "intro seen" flag, and process progress. This data is not personal and never leaves the device.</p>
+    <h2>External links</h2>
+    <p>Opening Privacy, Terms, Sources, Licenses or Support links launches your system browser; only then is a connection required, to load those external pages.</p>
+    <h2>Third-party components</h2>
+    <p>The app uses open-source libraries for UI and local storage. None of them collect personal data or perform tracking (see the Licenses page).</p>
+    <h2>Retention & deletion</h2>
+    <p>Local data persists until you uninstall the app or use Settings → Reset progress (which clears progress). Uninstalling removes all local data.</p>
+    <h2>Children</h2>
+    <p>The app collects no data, therefore it collects no data from children.</p>
+    <h2>Contact</h2>
+    <p>Privacy questions: <strong>waferlab.app@outlook.com</strong> — Controller: Dario Pometti.</p>
+    <p class="muted">This text describes the app's verified technical behavior and is not certified legal advice; a legal review is recommended.</p>
+  </div>
+  <div class="footlinks"><a href="index.html">Home</a><a href="Terms.html">Terms</a><a href="Support.html">Support</a><a href="Licenses.html">Licenses</a></div>
+</div>
+<footer class="site">© 2026 Dario Pometti · WaferLab</footer>
+<script>
+(function(){var b=document.body;var s=localStorage.getItem('wl_site_lang');
+var lang=s||((navigator.language||'it').toLowerCase().indexOf('en')===0?'en':'it');
+function set(l){b.setAttribute('data-lang',l);localStorage.setItem('wl_site_lang',l);
+document.querySelectorAll('.langtoggle button').forEach(function(x){x.classList.toggle('active',x.getAttribute('data-set')===l)});}
+set(lang);document.querySelectorAll('.langtoggle button').forEach(function(x){x.addEventListener('click',function(){set(x.getAttribute('data-set'))})});})();
+</script>
+</body>
+</html>
